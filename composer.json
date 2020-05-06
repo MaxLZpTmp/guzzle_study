@@ -8,7 +8,9 @@
             "email": "lmax_job@mail.ru"
         }
     ],
-    "require": {},
+    "require": {
+        "guzzlehttp/guzzle": "~6.0"
+    },
     "autoload": {
         "psr-4": {
             "maxlzp\\guzzle_study\\" : "src\\"
