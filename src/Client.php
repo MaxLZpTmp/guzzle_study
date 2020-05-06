@@ -6,6 +6,8 @@
 
 namespace maxlzp\guzzle_study;
 
+use PhpQuery\PhpQuery;
+
 /**
  * Class Client
  * @package maxlzp\guzzle_study
@@ -40,5 +42,16 @@ class Client
         $response = $this->guzzle->get($path);
         $responseBody = $response->getBody();
         return $responseBody->getContents();
+    }
+
+    /**
+     * @param string $html
+     */
+    public function parseHtml(string $html)
+    {
+        $phpQuery = new PhpQuery();
+        $phpQuery->load_str($html);
+        $res = $phpQuery->query('.head-champ a .post-name');
+        return $res;
     }
 }

@@ -25,11 +25,25 @@ class ClientTest extends TestCase
     /**
      * @test
      */
-    public function shouldGetResponse()
+    public function shouldGetResponseContent()
     {
         $client = new Client($this->baseUri);
         $responseContent = $client->getContentFromPath();
         $this->assertNotNull($responseContent);
         //echo $responseContent;
+    }
+
+    /**
+     * @test
+     */
+    public function shouldGetHtmlHead()
+    {
+        $client = new Client($this->baseUri);
+        $responseContent = $client->getContentFromPath('/news/');
+        $posts = $client->parseHtml($responseContent);
+        $this->assertNotNull($posts);
+        foreach ($posts as $post) {
+            echo \trim($post->textContent) . "\n";
+        }
     }
 }
