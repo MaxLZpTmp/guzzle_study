@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "47030f9f02aac6ec2ac0de1b273442af",
+    "content-hash": "9456e3d676c81e7c08644b51636133d6",
     "packages": [
         {
             "name": "guzzlehttp/guzzle",
@@ -206,6 +206,43 @@
                 "source": "https://github.com/guzzle/psr7/tree/1.6.1"
             },
             "time": "2019-07-01T23:21:34+00:00"
+        },
+        {
+            "name": "phpquery/phpquery",
+            "version": "0.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/elboza/PhpQuery.git",
+                "reference": "9556e6d903b89796491caee53baac426c9850159"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/elboza/PhpQuery/zipball/9556e6d903b89796491caee53baac426c9850159",
+                "reference": "9556e6d903b89796491caee53baac426c9850159",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "PhpQuery\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Beerware"
+            ],
+            "authors": [
+                {
+                    "name": "Fernando Iazeolla",
+                    "email": "fernando.iazeolla@gmail.com"
+                }
+            ],
+            "description": "jquery for php",
+            "support": {
+                "issues": "https://github.com/elboza/PhpQuery/issues",
+                "source": "https://github.com/elboza/PhpQuery/tree/0.0.2"
+            },
+            "time": "2019-08-08T19:13:26+00:00"
         },
         {
             "name": "psr/http-message",
