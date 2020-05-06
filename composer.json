@@ -13,7 +13,15 @@
     },
     "autoload": {
         "psr-4": {
-            "maxlzp\\guzzle_study\\" : "src\\"
+            "maxlzp\\guzzle_study\\" : "src/"
         }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "maxlzp\\guzzle_study\\tests\\" : "tests/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.5"
     }
 }
