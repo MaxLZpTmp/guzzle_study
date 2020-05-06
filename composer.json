@@ -1,0 +1,17 @@
+{
+    "name": "maxlzp/guzzle_study",
+    "description": "Guzzle study project",
+    "type": "project",
+    "authors": [
+        {
+            "name": "MaxLZp",
+            "email": "lmax_job@mail.ru"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "maxlzp\\guzzle_study\\" : "src\\"
+        }
+    }
+}
